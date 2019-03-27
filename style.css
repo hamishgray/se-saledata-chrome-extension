@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+.title {
+  margin: 0;
+  font-family: 'Source Serif Pro', serif;
+}
+.title + * { margin-top: 6px; }
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+
+
+.popup {
+  width: 480px;
+}
+
+.header {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+}
+.header__logo {
+  width: 163px;
+  display: block;
+  margin: auto;
+}
+
+.content {
+  padding: 15px;
+}
+
+/* YAML Format*/
+.saledata {
+  font-size: 14px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 24px;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+.saledata#sd_YML {
+  white-space: pre;
+}
+
