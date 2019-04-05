@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Secret Escapes | Sale YML",
+	"name": "SE Sale Data",
 	"description": "Get sale data from page in YML format",
-	"version": "1.1",
+	"version": "1.0",
 	"author": "Hamish Gray",
 
 	"background": {
