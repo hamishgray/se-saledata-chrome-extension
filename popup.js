@@ -27,7 +27,9 @@ chrome.runtime.onMessage.addListener(function (message) {
 	}
 	if(message.type == "priceper"){
 		var str = message.content.trim();
-		str += '. '
+		if( str.length > 0 ){
+			str += '. '
+		}
 		document.getElementById('sd_PriceDescription').innerHTML = str;
 	}
 	if(message.type == "pricedescription"){
