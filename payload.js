@@ -25,7 +25,7 @@ chrome.runtime.sendMessage({
 
 // Get price per person unit
 chrome.runtime.sendMessage({
-  content: document.getElementsByClassName("price__perperson")[0].innerHTML.replace("*",""),
+  content: document.getElementsByClassName("price__perperson")[0].textContent.replace("*",""),
   type: "priceper"
 });
 

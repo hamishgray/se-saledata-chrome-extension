@@ -2,11 +2,11 @@
 	"manifest_version": 2,
 	"name": "SE Sale Data",
 	"description": "Get sale data from page in YML format",
-	"version": "2",
+	"version": "2.1",
 	"author": "Hamish Gray",
 
 	"background": {
-		"scripts": ["popup.js"],
+		"scripts": ["popup.js", "jquery.min.js"],
 		"persistent": true
 	},
 
@@ -15,6 +15,13 @@
         "http://*/",
         "https://*/"
     ],
+
+	"icons": {
+		"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+	},
+
 	"browser_action": {
 		"default_icon": "logo.png",
 		"default_popup": "popup.html"

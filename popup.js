@@ -7,6 +7,7 @@ window.addEventListener('load', function (evt) {
 
 
 
+
 // Write YAML data format
 chrome.runtime.onMessage.addListener(function (message) {
 	if(message.type == "title"){
@@ -53,5 +54,3 @@ chrome.runtime.onMessage.addListener(function (message) {
 		document.getElementById('sd_Link').innerHTML = str;
 	}
 });
-
-
