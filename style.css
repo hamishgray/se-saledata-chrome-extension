@@ -28,11 +28,13 @@ h2 { font-size: 24px; }
 h3 { font-size: 20px; }
 
 
+
 .popup {
   width: 480px;
 }
 
 .header {
+  position: relative;
   background-color: #1a1a1a;
   color: #ffffff;
   padding: 10px 15px;
@@ -43,10 +45,23 @@ h3 { font-size: 20px; }
   display: block;
   margin: auto;
 }
+.header__vnum {
+  position: absolute;
+  top: 5px; right: 5px;
+  font-size: 11px;
+  line-height: 0;
+  color: #ffffff;
+}
+
+
+
 
 .content {
   padding: 15px;
 }
+
+
+
 
 /* YAML Format*/
 .saledata {
@@ -62,3 +77,7 @@ h3 { font-size: 20px; }
   white-space: pre;
 }
 
+
+#copy__canvas {
+  display: none;
+}

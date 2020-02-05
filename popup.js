@@ -7,50 +7,49 @@ window.addEventListener('load', function (evt) {
 
 
 
-
 // Write YAML data format
 chrome.runtime.onMessage.addListener(function (message) {
 	if(message.type == "title"){
 		var str = message.content.trim();
-		document.getElementById('sd_Title').innerHTML = str;
+		$('#sd_Title').html(str);
 	}
 	if(message.type == "location"){
 		var str = message.content.trim();
-		document.getElementById('sd_Location').innerHTML = str;
+		$('#sd_Location').html(str);
 	}
 	if(message.type == "description"){
 		var str = message.content.trim();
-		document.getElementById('sd_Description').innerHTML = str;
+		$('#sd_Description').html(str);
 	}
 	if(message.type == "price"){
 		var str = message.content.replace(/\D/g,'').trim();
-		document.getElementById('sd_Price').innerHTML = str;
+		$('#sd_Price').html(str);
 	}
 	if(message.type == "priceper"){
 		var str = message.content.trim();
 		if( str.length > 0 ){
 			str += '. '
 		}
-		document.getElementById('sd_PriceDescription').innerHTML = str;
+		$('#sd_PriceDescription').html(str);
 	}
 	if(message.type == "pricedescription"){
 		var str = message.content.trim();
-		document.getElementById('sd_PriceDescription').innerHTML += str;
+		$('#sd_PriceDescription').html(str);
 	}
 	if(message.type == "saved"){
 		var str = message.content.trim().split('%')[0].replace('-','').trim();
-		document.getElementById('sd_Saved').innerHTML = str;
+		$('#sd_Saved').html(str);
 	}
 	if(message.type == "expires"){
 		var str = message.content.split(' ')[0].trim();
-		document.getElementById('sd_Expires').innerHTML = str;
+		$('#sd_Expires').html(str);
 	}
 	if(message.type == "image"){
 		var str = message.content.trim();
-		document.getElementById('sd_Image').innerHTML = str;
+		$('#sd_Image').html(str);
 	}
 	if(message.type == "link"){
 		var str = message.content.trim();
-		document.getElementById('sd_Link').innerHTML = str;
+		$('#sd_Link').html(str);
 	}
 });

@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "SE Sale Data",
 	"description": "Get sale data from page in YML format",
-	"version": "2.1",
+	"version": "2.2",
 	"author": "Hamish Gray",
 
 	"background": {
